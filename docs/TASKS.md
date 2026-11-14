@@ -46,7 +46,8 @@ Legend: `[x]` done & verified · `[~]` in progress · `[ ]` to do · `[!]` block
 - [x] `vercel.json` + `scripts/build-vercel.mjs` (Build Output API: static site + bundled Express function, Node 22, maxDuration 300)
 - [x] Initial commit and push to `github.com/subodh-thallada/ai-to-3d`
 - [x] `vercel link` (project `protoforge`), GitHub repo connected (push to main deploys), env vars set for production/preview/development
-- [~] Production deploy from GitHub (first build failed: Vercel discontinued nodejs20.x → switched to nodejs22.x) → verify a full pipeline run on the production URL
+- [x] Production deploy from GitHub → https://protoforge-pink.vercel.app (Node 22 runtime)
+- [x] Verified a full pipeline run on production: "Build a quadcopter drone with an ESP32 flight controller" → 107 parts, 57 BOM lines, 52 nets, 11 firmware files, 19 assembly steps, score 70; the first invocation hit the 300 s cap and the next request resumed it ("Resuming pipeline in a new invocation")
 
 ## 6. Docs
 - [~] `docs/TASKS.md` (this file)
@@ -54,6 +55,8 @@ Legend: `[x]` done & verified · `[~]` in progress · `[ ]` to do · `[!]` block
 - [ ] `docs/ARCHITECTURE.md`: agent pipeline, prompts, data contract, rendering
 
 ## Known issues / next
+- 2026-11-14 ~19:45 UTC: the first Anthropic key was revoked (401 invalid x-api-key); replaced in server/.env and all Vercel environments.
+- iPhone run: integration + assembly hit local network errors; use Refine or re-run it on production for a clean result.
 - Local network here drops long uploads and DNS intermittently (git push / `vercel deploy` uploads failed several times); deploying via GitHub integration avoids local uploads.
 - Research ideas not yet built (see `docs/LANDSCAPE.md`): Wokwi `diagram.json` export for in-browser simulation, multi-view render self-check by the reviewer (vision), STEP export via OpenCascade WASM.
 
