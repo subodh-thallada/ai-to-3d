@@ -30,7 +30,7 @@ await build({
   outfile: path.join(fnDir, "index.mjs"),
   bundle: true,
   platform: "node",
-  target: "node20",
+  target: "node22",
   format: "esm",
   sourcemap: false,
   minify: false,
@@ -64,7 +64,7 @@ fs.writeFileSync(
   path.join(fnDir, ".vc-config.json"),
   JSON.stringify(
     {
-      runtime: "nodejs20.x",
+      runtime: "nodejs22.x",
       handler: "index.mjs",
       launcherType: "Nodejs",
       shouldAddHelpers: false,
