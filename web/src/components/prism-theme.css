@@ -1,0 +1,98 @@
+/* Protoforge code theme for Prism — tuned to the dark workspace tokens. */
+.pf-code {
+  color: #d5dae5;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.6;
+  tab-size: 4;
+}
+
+.pf-code .token.comment,
+.pf-code .token.prolog,
+.pf-code .token.doctype,
+.pf-code .token.cdata {
+  color: #6b7489;
+  font-style: italic;
+}
+
+.pf-code .token.punctuation {
+  color: #8b93a7;
+}
+
+.pf-code .token.namespace {
+  opacity: 0.75;
+}
+
+.pf-code .token.property,
+.pf-code .token.tag,
+.pf-code .token.constant,
+.pf-code .token.symbol,
+.pf-code .token.deleted {
+  color: #f78c6c;
+}
+
+.pf-code .token.boolean,
+.pf-code .token.number {
+  color: #ffb36b;
+}
+
+.pf-code .token.selector,
+.pf-code .token.attr-name,
+.pf-code .token.string,
+.pf-code .token.char,
+.pf-code .token.builtin,
+.pf-code .token.inserted {
+  color: #a5d6a7;
+}
+
+.pf-code .token.operator,
+.pf-code .token.entity,
+.pf-code .token.url,
+.pf-code .language-css .token.string,
+.pf-code .style .token.string,
+.pf-code .token.variable {
+  color: #89ddff;
+}
+
+.pf-code .token.atrule,
+.pf-code .token.attr-value,
+.pf-code .token.keyword {
+  color: #ff9e64;
+}
+
+.pf-code .token.function,
+.pf-code .token.class-name {
+  color: #7dcfff;
+}
+
+.pf-code .token.macro,
+.pf-code .token.directive,
+.pf-code .token.directive-hash,
+.pf-code .token.important {
+  color: #c792ea;
+}
+
+.pf-code .token.regex {
+  color: #e6c07b;
+}
+
+.pf-code .token.section,
+.pf-code .token.table,
+.pf-code .token.key {
+  color: #7dcfff;
+}
+
+.pf-code .token.important,
+.pf-code .token.bold {
+  font-weight: 600;
+}
+
+.pf-code .token.italic {
+  font-style: italic;
+}
+
+.pf-gutter {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.6;
+}

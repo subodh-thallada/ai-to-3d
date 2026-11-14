@@ -1,0 +1,36 @@
+{
+  "name": "@protoforge/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "@protoforge/shared": "*",
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "lucide-react": "^1.73.0",
+    "prismjs": "^1.30.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5",
+    "three": "^0.187.0",
+    "three-bvh-csg": "^0.0.18",
+    "three-mesh-bvh": "^0.9.18",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8",
+    "@vitejs/plugin-react": "^6.3.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.187.0",
+    "@types/prismjs": "^1.26.6",
+    "tailwindcss": "^4.3.5",
+    "@tailwindcss/vite": "^4.3.5"
+  }
+}

@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Design tokens — dark engineering workspace. Use as Tailwind classes: bg-bg, bg-panel, bg-panel-2, border-line,
+   text-ink, text-ink-dim, text-ink-faint, text-accent, bg-accent, text-ok, text-warn, text-bad, font-mono */
+@theme {
+  --color-bg: #0b0d12;
+  --color-panel: #12151c;
+  --color-panel-2: #181c25;
+  --color-panel-3: #1f2430;
+  --color-line: #262c3a;
+  --color-line-strong: #343c4f;
+  --color-ink: #e6e9ef;
+  --color-ink-dim: #a3abbd;
+  --color-ink-faint: #6b7489;
+  --color-accent: #ff7a1a;
+  --color-accent-2: #ffb36b;
+  --color-cyan: #38bdf8;
+  --color-ok: #34d399;
+  --color-warn: #fbbf24;
+  --color-bad: #f87171;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+html, body, #root { height: 100%; }
+body { background: var(--color-bg); color: var(--color-ink); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+::selection { background: rgba(255, 122, 26, 0.35); }
+* { scrollbar-width: thin; scrollbar-color: #343c4f transparent; }
